@@ -1,3 +1,5 @@
+//Faça um programa que receba 3 valores, e armazene-os em vetores, após isso mostre os valores na tela.
+
 #include <stdio.h>
 int main(){
 
