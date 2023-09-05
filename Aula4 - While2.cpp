@@ -10,7 +10,7 @@ int main() {
 
     float nota, soma, media, i;
     
-    printf("Digite uma nota: ");
+    printf("Digite uma nota(-1 para parar): ");
     scanf("%f", &nota);
     
     while (nota != -1){
@@ -19,7 +19,7 @@ int main() {
     soma += nota;
     media = soma / i;
     
-    printf("Digite outra nota: ");
+    printf("Digite outra nota(-1 para parar): ");
     scanf("%f", &nota);
 	}
     printf("Media das notas: %.2f", media);
