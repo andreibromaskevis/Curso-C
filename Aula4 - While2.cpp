@@ -24,3 +24,4 @@ int main() {
 	}
     printf("Media das notas: %.2f", media);
 }
+
