@@ -1,3 +1,5 @@
+//Receba um valor em Real (R$) (float) e mostre a conversão para Dólar(5 R$) e Euro(5.2 R$).
+
 #include <stdio.h>
 #include <locale.h>
 
