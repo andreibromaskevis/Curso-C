@@ -12,32 +12,32 @@ int main() {
     
     setlocale(LC_ALL,"Portuguese");
 
-    do {
+	while (escolha != 3) {
+
         printf("Escolha uma opcao:\n");
-        printf("1.km/h para m/s\n");
-        printf("2.m/s para km/h\n");
-        printf("3. Finalizar\n");
+        printf("1 - km/h para m/s\n");
+        printf("2 - m/s para km/h\n");
+        printf("3 - Finalizar\n\n");
         printf("Opcao: ");
         scanf("%d", &escolha);
 
         switch (escolha) {
             case 1:
-                printf("Digite a velocidade em km/h: ");
+                printf("\nDigite a velocidade em km/h: ");
                 scanf("%f", &velocidade);
-                printf("%.2f km/h equivale a %.2f m/s\n", velocidade, velocidade / 3.6);
+                printf("%.2f km/h equivale a %.2f m/s\n\n", velocidade, velocidade / 3.6);
                 break;
             case 2:
-                printf("Digite a velocidade em m/s: ");
+                printf("\nDigite a velocidade em m/s: ");
                 scanf("%f", &velocidade);
-                printf("%.2f m/s equivale a %.2f km/h\n", velocidade, velocidade * 3.6);
+                printf("%.2f m/s equivale a %.2f km/h\n\n", velocidade, velocidade * 3.6);
                 break;
             case 3:
                 printf("Programa finalizado.\n");
                 break;
             default:
-                printf("Inválido. Tente novamente.\n");
+                printf("Inválido! Tente novamente.\n");
         }
-    } while (escolha != 3);
-
+    } 
     return 0;
 }
